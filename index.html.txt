@@ -1,59 +1,73 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>منصة حصيف — v22.7</title>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="./assets/style.css"></head><body>
-<header class="header"><div class="container py-3 flex items-center justify-between">
-  <a class="flex items-center gap-3" href="./">
-    <img class="hero-logo" src="./assets/hasseef-logo.svg" alt="حصيف">
-    <div><div class="text-lg md:text-xl font-extrabold">منصة حصيف — Hasseef</div>
-    <div class="text-xs text-slate-500">بوابة وطنية للتكامل التنموي</div></div>
-  </a>
-  <nav class="hidden md:flex items-center gap-2 text-sm">
-    <a class="btn" href="./about.html">عن المنصة</a>
-    <a class="btn" href="./privacy.html">الخصوصية</a>
-    <a class="btn" href="./terms.html">الاتفاقية</a>
-    <a class="btn" href="./contact.html">تواصل</a>
-    <a class="btn btn-primary" href="./account.html?type=gov">دخول</a>
-  </nav>
-</div></header>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>منصة حصيف — الصفحة الرئيسية</title>
 
-<main class="container py-6">
-  <section class="card">
-    <div class="section-title">منصة وطنية للتكامل التنموي</div>
-    <p class="text-slate-600">ربط التحديات بالحلول والتمويل والتنفيذ وقياس الأثر — عبر حسابات لكل قطاع وشركاء استراتيجيين.</p>
-  </section>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css?v=23001">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./assets/shared.js?v=23001" defer></script>
+</head>
+<body class="bg-gray-50 font-[Tajawal] text-gray-800">
 
-  <section class="card mt-4">
-    <div class="section-title">الحسابات</div>
-    <div class="grid4">
-      <a class="card" href="./account.html?type=gov">الجهات الحكومية</a>
-      <a class="card" href="./account.html?type=emirate">الإمارات</a>
-      <a class="card" href="./account.html?type=private">القطاع الخاص</a>
-      <a class="card" href="./account.html?type=nonprofit">غير الربحي</a>
-      <a class="card" href="./account.html?type=university">الجامعات</a>
-      <a class="card" href="./account.html?type=individual">الأفراد</a>
-      <a class="card" href="./account.html?type=donor">المانحون</a>
-      <a class="card" href="./account.html?type=partners">الشركاء الاستراتيجيون</a>
+  <!-- Header -->
+  <header class="bg-white shadow p-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="./assets/hasseef-logo.svg" alt="شعار حصيف" class="h-10">
+      <h1 class="text-xl font-bold text-[#003366]">منصة حصيف الوطنية للتكامل التنموي</h1>
+    </div>
+    <nav class="flex gap-4">
+      <a href="about.html" class="hover:text-blue-600">عن المنصة</a>
+      <a href="contact.html" class="hover:text-blue-600">تواصل معنا</a>
+      <a href="privacy.html" class="hover:text-blue-600">سياسة الخصوصية</a>
+      <a href="terms.html" class="hover:text-blue-600">اتفاقية الاستخدام</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="text-center py-12 px-4">
+    <h2 class="text-3xl font-bold mb-6 text-[#003366]">منصة وطنية تجمع القطاعات الحكومية والخاصة وغير الربحية والجامعات والأفراد</h2>
+    <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-10">
+      تمكّن منصة حصيف التكامل التنموي بين القطاعات، وتتيح تبادل الحلول، ورعاية المشاريع، وطرح الفرص التطوعية والتدريبية، 
+      وإدارة المبادرات والفعاليات والمرافق، بما يواكب مستهدفات رؤية المملكة 2030.
+    </p>
+
+    <a href="account.html" class="bg-[#003366] text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">ابدأ الاستخدام</a>
+  </main>
+
+  <!-- Partners Section -->
+  <section class="bg-gray-100 py-10">
+    <h3 class="text-2xl font-bold text-center text-[#003366] mb-8">شركاؤنا في النجاح</h3>
+    <div class="flex flex-wrap justify-center items-center gap-6 px-4">
+      <img src="./assets/partners/sdb.png" class="h-12" alt="بنك التنمية">
+      <img src="./assets/partners/monshaat.png" class="h-12" alt="منشآت">
+      <img src="./assets/partners/ncnp.png" class="h-12" alt="المركز الوطني لتنمية القطاع غير الربحي">
+      <img src="./assets/partners/hrsd.png" class="h-12" alt="وزارة الموارد البشرية">
+      <img src="./assets/partners/mc.png" class="h-12" alt="وزارة التجارة">
+      <img src="./assets/partners/mep.png" class="h-12" alt="وزارة الاقتصاد والتخطيط">
+      <img src="./assets/partners/rdia.png" class="h-12" alt="هيئة البحث والتطوير والابتكار">
+      <img src="./assets/partners/ndf.png" class="h-12" alt="صندوق التنمية الوطني">
+      <img src="./assets/partners/asda.png" class="h-12" alt="إسناد">
+      <img src="./assets/partners/adaa.png" class="h-12" alt="أداء">
     </div>
   </section>
 
-  <section class="card mt-4">
-    <div class="section-title">الشركاء والرعاة</div>
-    <div class="logo-rail">
-      <a class="cell" href="./partner.html?slug=sdb"><img src="./assets/partners/sdb.png" onerror="this.style.display='none'"><div><b>SDB</b></div></a>
-      <a class="cell" href="./partner.html?slug=monshaat"><img src="./assets/partners/monshaat.png" onerror="this.style.display='none'"><div><b>Monsha’at</b></div></a>
-      <a class="cell" href="./partner.html?slug=ncnp"><img src="./assets/partners/ncnp.png" onerror="this.style.display='none'"><div><b>NCNP</b></div></a>
-      <a class="cell" href="./partner.html?slug=hrsd"><img src="./assets/partners/hrsd.png" onerror="this.style.display='none'"><div><b>HRSD</b></div></a>
-      <a class="cell" href="./partner.html?slug=mc"><img src="./assets/partners/mc.png" onerror="this.style.display='none'"><div><b>MC</b></div></a>
-      <a class="cell" href="./partner.html?slug=mep"><img src="./assets/partners/mep.png" onerror="this.style.display='none'"><div><b>MEP</b></div></a>
-      <a class="cell" href="./partner.html?slug=rdia"><img src="./assets/partners/rdia.png" onerror="this.style.display='none'"><div><b>RDIA</b></div></a>
-      <a class="cell" href="./partner.html?slug=ndf"><img src="./assets/partners/ndf.png" onerror="this.style.display='none'"><div><b>NDF</b></div></a>
-      <a class="cell" href="./partner.html?slug=asda"><img src="./assets/partners/asda.png" onerror="this.style.display='none'"><div><b>ASDA</b></div></a>
-      <a class="cell" href="./partner.html?slug=adaa"><img src="./assets/partners/adaa.png" onerror="this.style.display='none'"><div><b>ADAA</b></div></a>
+  <!-- Footer -->
+  <footer class="bg-[#003366] text-white text-center py-6 mt-10">
+    <div class="mb-2">
+      <img src="./assets/talbiya-company.png" class="inline-block h-10 mx-2" alt="تلبية الشركة">
+      <img src="./assets/talbiya-initiative.png" class="inline-block h-10 mx-2" alt="مبادرة تلبية">
+      <img src="./assets/partners/snb.png" class="inline-block h-10 mx-2" alt="البنك الأهلي - الراعي الذهبي">
     </div>
-  </section>
-
-  <footer class="footer container">© منصة حصيف — إصدار v22.7 (نموذج أولي)</footer>
-</main></body></html>
+    <p>© جميع الحقوق محفوظة لمنصة حصيف الوطنية للتكامل التنموي</p>
+    <div class="flex justify-center mt-3 gap-4">
+      <a href="#" title="X"><img src="./assets/icon-x.svg" class="h-5"></a>
+      <a href="#" title="Snapchat"><img src="./assets/icon-snap.svg" class="h-5"></a>
+      <a href="#" title="TikTok"><img src="./assets/icon-tiktok.svg" class="h-5"></a>
+      <a href="#" title="Telegram"><img src="./assets/icon-telegram.svg" class="h-5"></a>
+    </div>
+  </footer>
+</body>
+</html>
