@@ -1,64 +1,59 @@
 <!DOCTYPE html><html lang="ar" dir="rtl"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>منصة حصيف — v22.2</title>
+<title>منصة حصيف  v22.6</title>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="./assets/style.css">
-</head><body>
-<header class="header">
-  <div class="container py-3 flex items-center justify-between">
-    <a href="./" class="flex items-center gap-3">
-      <img src="./assets/hasseef-logo.svg" class="hero-logo" alt="حصيف">
-      <div>
-        <div class="text-lg md:text-xl font-extrabold">منصة حصيف — Hasseef</div>
-        <div class="text-xs text-slate-500">بوابة وطنية للتكامل التنموي</div>
-      </div>
-    </a>
-    <nav class="hidden md:flex items-center gap-2 text-sm">
-      <a class="btn" href="./about.html">عن المنصة</a>
-      <a class="btn" href="./privacy.html">الخصوصية</a>
-      <a class="btn" href="./terms.html">الاتفاقية</a>
-      <a class="btn btn-primary" href="./accounts/gov.html">دخول</a>
-    </nav>
-  </div>
-</header>
+<link rel="stylesheet" href="./assets/style.css"></head><body>
+<header class="header"><div class="container py-3 flex items-center justify-between">
+  <a class="flex items-center gap-3" href="./">
+    <img class="hero-logo" src="./assets/hasseef-logo.svg" alt="حصيف">
+    <div><div class="text-lg md:text-xl font-extrabold">منصة حصيف  Hasseef</div>
+    <div class="text-xs text-slate-500">بوابة وطنية للتكامل التنموي</div></div>
+  </a>
+  <nav class="hidden md:flex items-center gap-2 text-sm">
+    <a class="btn" href="./about.html">عن المنصة</a>
+    <a class="btn" href="./privacy.html">الخصوصية</a>
+    <a class="btn" href="./terms.html">الاتفاقية</a>
+    <a class="btn" href="./contact.html">تواصل</a>
+    <a class="btn btn-primary" href="./account.html?type=gov">دخول</a>
+  </nav>
+</div></header>
 
 <main class="container py-6">
   <section class="card">
-    <div class="flex items-center gap-3">
-      <img src="./assets/hasseef-logo.svg" class="hero-logo" alt="حصيف">
-      <div>
-        <h1 class="text-2xl md:text-3xl font-extrabold">منصة وطنية للتكامل التنموي</h1>
-        <p class="text-slate-600">ربط الاحتياج بالحلول والتمويل والتنفيذ وقياس الأثر — عبر جميع القطاعات.</p>
-      </div>
-    </div>
-    <div class="mt-3 sponsor">
-      <img src="./assets/talbiya-company.png" alt="شركة تلبية للبحث والتطوير">
-      <div class="text-sm">
-        <div class="font-bold">الراعي الرسمي: شركة تلبية للبحث والتطوير</div>
-        <div class="text-slate-600">من مبادرة تلبية انطلقت منصة حصيف</div>
-      </div>
-      <div class="grow"></div>
-      <img src="./assets/talbiya-initiative.png" alt="مبادرة تلبية" style="height:52px">
+    <div class="section-title">منصة وطنية للتكامل التنموي</div>
+    <p class="text-slate-600">ربط التحديات بالحلول والتمويل والتنفيذ وقياس الأثر  عبر حسابات لكل قطاع وشركاء استراتيجيين.</p>
+  </section>
+
+  <section class="card mt-4">
+    <div class="section-title">الحسابات</div>
+    <div class="grid4">
+      <a class="card" href="./account.html?type=gov">الجهات الحكومية</a>
+      <a class="card" href="./account.html?type=emirate">الإمارات</a>
+      <a class="card" href="./account.html?type=private">القطاع الخاص</a>
+      <a class="card" href="./account.html?type=nonprofit">غير الربحي</a>
+      <a class="card" href="./account.html?type=university">الجامعات</a>
+      <a class="card" href="./account.html?type=individual">الأفراد</a>
+      <a class="card" href="./account.html?type=donor">المانحون</a>
+      <a class="card" href="./account.html?type=partners">الشركاء الاستراتيجيون</a>
     </div>
   </section>
 
   <section class="card mt-4">
-    <div class="section-title">المستفيدون</div>
-    <div class="grid4">
-      <a class="card" href="./accounts/gov.html">الجهات الحكومية</a>
-      <a class="card" href="./accounts/emirate.html">الإمارات</a>
-      <a class="card" href="./accounts/private.html">القطاع الخاص</a>
-      <a class="card" href="./accounts/nonprofit.html">غير الربحي</a>
-      <a class="card" href="./accounts/university.html">الجامعات</a>
-      <a class="card" href="./accounts/individual.html">الأفراد</a>
-      <a class="card" href="./accounts/donor.html">المانحون</a>
-      <a class="card" href="./accounts/partners.html">الشركاء الاستراتيجيون</a>
+    <div class="section-title">الشركاء والرعاة</div>
+    <div class="logo-rail">
+      <a class="cell" href="./partner.html?slug=sdb"><img src="./assets/partners/sdb.png"><div><b>SDB</b></div></a>
+      <a class="cell" href="./partner.html?slug=monshaat"><img src="./assets/partners/monshaat.png"><div><b>Monshaat</b></div></a>
+      <a class="cell" href="./partner.html?slug=ncnp"><img src="./assets/partners/ncnp.png"><div><b>NCNP</b></div></a>
+      <a class="cell" href="./partner.html?slug=hrsd"><img src="./assets/partners/hrsd.png"><div><b>HRSD</b></div></a>
+      <a class="cell" href="./partner.html?slug=mc"><img src="./assets/partners/mc.png"><div><b>MC</b></div></a>
+      <a class="cell" href="./partner.html?slug=mep"><img src="./assets/partners/mep.png"><div><b>MEP</b></div></a>
+      <a class="cell" href="./partner.html?slug=rdia"><img src="./assets/partners/rdia.png"><div><b>RDIA</b></div></a>
+      <a class="cell" href="./partner.html?slug=ndf"><img src="./assets/partners/ndf.png"><div><b>NDF</b></div></a>
+      <a class="cell" href="./partner.html?slug=asda"><img src="./assets/partners/asda.png"><div><b>ASDA</b></div></a>
+      <a class="cell" href="./partner.html?slug=adaa"><img src="./assets/partners/adaa.png"><div><b>ADAA</b></div></a>
     </div>
   </section>
 
-  <footer class="footer container">© منصة حصيف — إصدار v22.2 (نموذج أولي)</footer>
-</main>
-
-<script src="./assets/shared.js"></script>
-</body></html>
+  <footer class="footer container"> منصة حصيف  إصدار v22.6 (نموذج أولي)</footer>
+</main></body></html>
