@@ -1,112 +1,59 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>منصة حصيف — v21</title>
+<!DOCTYPE html><html lang="ar" dir="rtl"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>منصة حصيف — v22.7</title>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="./assets/style.css">
-<script defer src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body>
-<header class="header">
-  <div class="container py-3 flex items-center justify-between">
-    <a href="./" class="flex items-center gap-3">
-      <img src="./assets/hasseef-logo.svg" width="40" height="40" class="rounded" alt="حصيف">
-      <div>
-        <div class="text-lg font-extrabold">منصة حصيف — Hasseef</div>
-        <div class="text-xs text-slate-500">بوابة وطنية للتكامل التنموي</div>
-      </div>
-    </a>
-    <nav class="hidden md:flex items-center gap-2 text-sm">
-      <a class="btn" href="#about"><i data-lucide="info"></i> عن المنصة</a>
-      <a class="btn" href="#services"><i data-lucide="app-window"></i> الخدمات</a>
-      <a class="btn" href="#impact"><i data-lucide="bar-chart-big"></i> لوحة الأثر</a>
-      <a class="btn" href="#support"><i data-lucide="life-buoy"></i> الدعم</a>
-      <a class="btn btn-primary" href="./accounts/gov.html"><i data-lucide="log-in"></i> دخول</a>
-    </nav>
-  </div>
-</header>
+<link rel="stylesheet" href="./assets/style.css"></head><body>
+<header class="header"><div class="container py-3 flex items-center justify-between">
+  <a class="flex items-center gap-3" href="./">
+    <img class="hero-logo" src="./assets/hasseef-logo.svg" alt="حصيف">
+    <div><div class="text-lg md:text-xl font-extrabold">منصة حصيف — Hasseef</div>
+    <div class="text-xs text-slate-500">بوابة وطنية للتكامل التنموي</div></div>
+  </a>
+  <nav class="hidden md:flex items-center gap-2 text-sm">
+    <a class="btn" href="./about.html">عن المنصة</a>
+    <a class="btn" href="./privacy.html">الخصوصية</a>
+    <a class="btn" href="./terms.html">الاتفاقية</a>
+    <a class="btn" href="./contact.html">تواصل</a>
+    <a class="btn btn-primary" href="./account.html?type=gov">دخول</a>
+  </nav>
+</div></header>
 
 <main class="container py-6">
   <section class="card">
-    <div class="flex items-center gap-3">
-      <img src="./assets/hasseef-logo.svg" width="48" height="48" class="rounded" alt="حصيف">
-      <div>
-        <h1 class="text-2xl md:text-3xl font-extrabold">منصة وطنية للتكامل التنموي</h1>
-        <p class="text-slate-600">تربط الاحتياج بالحلول والتمويل والتنفيذ وقياس الأثر — للأفراد، والقطاعين العام والخاص، والقطاع غير الربحي، والجامعات، والمانحين، والإمارات.</p>
-      </div>
-    </div>
-    <div class="flex flex-wrap gap-3 mt-3">
-      <a href="./accounts/gov.html" class="btn btn-primary"><i data-lucide="play"></i> ابدأ الآن</a>
-      <a href="#services" class="btn"><i data-lucide="app-window"></i> استعراض الخدمات</a>
-      <button class="btn" onclick="toggleNotify(true)"><i data-lucide="bell"></i> التنبيهات</button>
-    </div>
+    <div class="section-title">منصة وطنية للتكامل التنموي</div>
+    <p class="text-slate-600">ربط التحديات بالحلول والتمويل والتنفيذ وقياس الأثر — عبر حسابات لكل قطاع وشركاء استراتيجيين.</p>
   </section>
 
-  <section id="beneficiaries" class="mt-4 card">
-    <div class="section-title"><i data-lucide="users"></i> المستفيدون</div>
-    <div class="grid4 mt-2">
-      <a class="card" href="./accounts/gov.html"><i data-lucide="building-2"></i> <b>الجهات الحكومية</b><div class="text-xs text-slate-500 mt-1">برامج، شراكات، مؤشرات</div></a>
-      <a class="card" href="./accounts/emirate.html"><i data-lucide="shield-check"></i> <b>الإمارات</b><div class="text-xs text-slate-500 mt-1">رعاية الأمير + المسح الأمني للمتحدثين</div></a>
-      <a class="card" href="./accounts/private.html"><i data-lucide="factory"></i> <b>القطاع الخاص</b><div class="text-xs text-slate-500 mt-1">CSR، حلول، مرافق، متحدثون</div></a>
-      <a class="card" href="./accounts/nonprofit.html"><i data-lucide="heart-handshake"></i> <b>غير الربحي</b><div class="text-xs text-slate-500 mt-1">مبادرات، متطوعون، تمويل</div></a>
-      <a class="card" href="./accounts/university.html"><i data-lucide="graduation-cap"></i> <b>الجامعات</b><div class="text-xs text-slate-500 mt-1">تدريب تعاوني، حاضنات، مرافق</div></a>
-      <a class="card" href="./accounts/individual.html"><i data-lucide="user"></i> <b>الأفراد</b><div class="text-xs text-slate-500 mt-1">ميول، تدريب، فرص تطوعية</div></a>
-      <a class="card" href="./accounts/donor.html"><i data-lucide="hand-coins"></i> <b>المانحون</b><div class="text-xs text-slate-500 mt-1">برامج المنح، محفظة، أثر</div></a>
-      <a class="card" href="./accounts/partners.html"><i data-lucide="handshake"></i> <b>الشركاء الاستراتيجيون</b><div class="text-xs text-slate-500 mt-1">مواءمة الدور والمؤشرات</div></a>
-    </div>
-  </section>
-
-  <section id="services" class="mt-4 card">
-    <div class="section-title"><i data-lucide="app-window"></i> الخدمات الرئيسية</div>
-    <ul class="list-disc pr-6 text-slate-700 leading-7">
-      <li>إدارة المشاريع والبرامج التنموية (مراحل، ميزانيات، مؤشرات، أثر).</li>
-      <li>سوق الحلول والاستشارات (جامعات، خبراء، قطاع خاص).</li>
-      <li>بوابة الرعايات الوطنية (CSR) و**طلب رعاية الأمير** من القطاعات واعتماد الإمارة.</li>
-      <li>المرافق والفعاليات + **المسح الأمني للمتحدثين** (للأشخاص لا الأماكن) + إدارة المدربين والمتحدثين.</li>
-      <li>التطوع والتوظيف والتدريب التعاوني (في جميع الحسابات عدا الشركاء الاستراتيجيين).</li>
-      <li>المستشار الذكي والمطابقة الذكية بين الاحتياج والحل والتمويل والمنفّذ.</li>
-      <li>لوحات الأثر ومؤشرات الأداء الوطنية وتقارير مخصّصة للشركاء.</li>
-    </ul>
-  </section>
-
-  <section id="impact" class="mt-4 card">
-    <div class="section-title"><i data-lucide="bar-chart-big"></i> مؤشرات سريعة</div>
+  <section class="card mt-4">
+    <div class="section-title">الحسابات</div>
     <div class="grid4">
-      <div class="kpi"><div class="text-xs text-slate-500">مشاريع نشطة</div><div class="text-2xl font-extrabold">126</div></div>
-      <div class="kpi"><div class="text-xs text-slate-500">فرص رعاية</div><div class="text-2xl font-extrabold">48</div></div>
-      <div class="kpi"><div class="text-xs text-slate-500">شركاء وطنيون</div><div class="text-2xl font-extrabold">22</div></div>
-      <div class="kpi"><div class="text-xs text-slate-500">مستخدمون نشطون</div><div class="text-2xl font-extrabold">3.4K</div></div>
+      <a class="card" href="./account.html?type=gov">الجهات الحكومية</a>
+      <a class="card" href="./account.html?type=emirate">الإمارات</a>
+      <a class="card" href="./account.html?type=private">القطاع الخاص</a>
+      <a class="card" href="./account.html?type=nonprofit">غير الربحي</a>
+      <a class="card" href="./account.html?type=university">الجامعات</a>
+      <a class="card" href="./account.html?type=individual">الأفراد</a>
+      <a class="card" href="./account.html?type=donor">المانحون</a>
+      <a class="card" href="./account.html?type=partners">الشركاء الاستراتيجيون</a>
     </div>
   </section>
 
-  <section id="about" class="mt-4 card"><div class="section-title"><i data-lucide="info"></i> عن المنصة</div>
-    <p class="text-slate-700">منصة حصيف تربط دورة الحياة التنموية: احتياج → حل → تمويل → تنفيذ → قياس أثر، وتستخدم البيانات والذكاء الاصطناعي لرفع الكفاءة والحوكمة.</p>
+  <section class="card mt-4">
+    <div class="section-title">الشركاء والرعاة</div>
+    <div class="logo-rail">
+      <a class="cell" href="./partner.html?slug=sdb"><img src="./assets/partners/sdb.png" onerror="this.style.display='none'"><div><b>SDB</b></div></a>
+      <a class="cell" href="./partner.html?slug=monshaat"><img src="./assets/partners/monshaat.png" onerror="this.style.display='none'"><div><b>Monsha’at</b></div></a>
+      <a class="cell" href="./partner.html?slug=ncnp"><img src="./assets/partners/ncnp.png" onerror="this.style.display='none'"><div><b>NCNP</b></div></a>
+      <a class="cell" href="./partner.html?slug=hrsd"><img src="./assets/partners/hrsd.png" onerror="this.style.display='none'"><div><b>HRSD</b></div></a>
+      <a class="cell" href="./partner.html?slug=mc"><img src="./assets/partners/mc.png" onerror="this.style.display='none'"><div><b>MC</b></div></a>
+      <a class="cell" href="./partner.html?slug=mep"><img src="./assets/partners/mep.png" onerror="this.style.display='none'"><div><b>MEP</b></div></a>
+      <a class="cell" href="./partner.html?slug=rdia"><img src="./assets/partners/rdia.png" onerror="this.style.display='none'"><div><b>RDIA</b></div></a>
+      <a class="cell" href="./partner.html?slug=ndf"><img src="./assets/partners/ndf.png" onerror="this.style.display='none'"><div><b>NDF</b></div></a>
+      <a class="cell" href="./partner.html?slug=asda"><img src="./assets/partners/asda.png" onerror="this.style.display='none'"><div><b>ASDA</b></div></a>
+      <a class="cell" href="./partner.html?slug=adaa"><img src="./assets/partners/adaa.png" onerror="this.style.display='none'"><div><b>ADAA</b></div></a>
+    </div>
   </section>
 
-  <section id="support" class="mt-4 card"><div class="section-title"><i data-lucide="life-buoy"></i> الدعم الفني</div>
-    <p class="text-slate-700">support@hasseef.example — بريد تجريبي في النسخة الأولية.</p>
-  </section>
-
-  <section id="privacy" class="mt-4 card"><div class="section-title"><i data-lucide="lock"></i> سياسة الخصوصية</div>
-    <p class="text-slate-700">مسودة قابلة للاستبدال بنصكم الرسمي لاحقًا.</p>
-  </section>
-
-  <section id="terms" class="mt-4 card"><div class="section-title"><i data-lucide="scroll-text"></i> اتفاقية الاستخدام</div>
-    <p class="text-slate-700">استخدام المنصة يعني الموافقة على الشروط والأحكام وسياسات المعالجة والحوكمة. مسودة للتجربة.</p>
-  </section>
-</main>
-
-<!-- Notifications modal + file input shared -->
-<div id="notifyPanel" class="modal"><div class="box">
-  <div class="flex items-center justify-between"><div class="font-bold">التنبيهات</div><button class="btn text-xs" onclick="toggleNotify(false)">إغلاق</button></div>
-  <ul class="list-disc pr-6 text-sm mt-2"><li>وصول طلب رعاية جديد</li><li>تنبيه مرفقات ناقصة | CSR #392</li></ul>
-</div></div>
-<input id="filePicker" type="file" multiple class="hidden" onchange="attachFiles(event)">
-
-<script src="./assets/shared.js"></script>
-<script> if (window.lucide) lucide.createIcons(); </script>
-</body>
-</html>
+  <footer class="footer container">© منصة حصيف — إصدار v22.7 (نموذج أولي)</footer>
+</main></body></html>
